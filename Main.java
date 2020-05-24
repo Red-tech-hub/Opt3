@@ -51,6 +51,7 @@ class Klant {
 
     }
 
+    //code smell dead code: een for loop is gebruikt i.p.v. ervoor een rij aan optellingen te maken in de code
     public Integer review() {
         ArrayList<Integer> sterren = new ArrayList<Integer>();
 
@@ -66,11 +67,6 @@ class Klant {
         return gemiddelde / sterren.size();
     }
 }
-//    public Integer aantalKlanten(){
-//        Klant k = new Klant();
-//        return k().size();
-//}
-
 
 class Werknemer extends Baas {
     Klant klant = new Klant();
